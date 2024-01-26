@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a63e3c5a.css",
+    "main.js": "/static/js/main.d2dc69b7.js",
+    "static/js/787.84686e62.chunk.js": "/static/js/787.84686e62.chunk.js",
+    "static/media/headshot.jpg": "/static/media/headshot.234abcba667a930fd9ab.jpg",
+    "static/media/SpareSeat.png": "/static/media/SpareSeat.5cedbacf1ab551697e1e.png",
+    "index.html": "/index.html",
+    "main.a63e3c5a.css.map": "/static/css/main.a63e3c5a.css.map",
+    "main.d2dc69b7.js.map": "/static/js/main.d2dc69b7.js.map",
+    "787.84686e62.chunk.js.map": "/static/js/787.84686e62.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a63e3c5a.css",
+    "static/js/main.d2dc69b7.js"
+  ]
+}
