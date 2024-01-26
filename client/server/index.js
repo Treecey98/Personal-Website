@@ -6,8 +6,6 @@ const app = express()
 
 const PORT = 3001
 
-app.use('/', express.static('build'))
-
 app.use(cors());
 app.use(express.json());
 
@@ -68,11 +66,8 @@ app.post('/api/create', (req, res) => {
     });
 });
 
+app.use('/', express.static('./build'));
+
 app.listen(PORT, () => {
     console.log(`Server running on port ${{PORT}}`);
 });
-
-/* app.get("/", (req, res) => {
-    db.query(
-        "INSERT INTO posts (title, posts_text, user_name) VALUES ('Test Blog2c', 'Test', 'Ed')");
-}); */
