@@ -66,7 +66,13 @@ app.post('/api/create', (req, res) => {
     });
 });
 
-app.use('/', express.static('./build'));
+// app.use('/', express.static('./build'));
+
+app.use(
+    cors({
+        origin: ["http://localhost:3000", "hhtps://edward-treece.onrender.com"]
+    })
+)
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${{PORT}}`);
