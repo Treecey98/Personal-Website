@@ -66,7 +66,7 @@ app.post('/api/create', (req, res) => {
     });
 });
 
-// app.use('/', express.static('./build'));
+app.use('/', express.static('./build'));
 
 app.use(
     cors({
