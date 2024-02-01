@@ -70,7 +70,7 @@ app.use('/', express.static('./build'));
 
 app.use(
     cors({
-        origin: ["http://localhost:3000", "hhtps://edward-treece.onrender.com"]
+        origin: ["https://edward-treece.onrender.com"]
     })
 )
 
