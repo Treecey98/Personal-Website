@@ -8,9 +8,9 @@ function Blog() {
     const [postList, setPostList] = useState([])  
 
     useEffect(() => {
-            Axios.get('https://node-mysql-api-blog.onrender.com/recentblogposts'.then((data) => {
+            Axios.get('https://node-mysql-api-blog.onrender.com/recentblogposts').then((data) => {
                 setPostList(data.data)
-            }))
+            })
     }, []);
 
     let navigate = useNavigate();
