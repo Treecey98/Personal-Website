@@ -58,7 +58,7 @@ app.post('/api/create', (req, res) => {
     date
 
     db.query(
-        "INSERT INTO posts (title, posts_text, date_posted) VALUES (?,?,?)", [title, text, date], (err, result) => {
+        "INSERT INTO Posts (title, posts_text, date_posted) VALUES (?,?,?)", [title, text, date], (err, result) => {
             if (err) {
                 console.log(err);
             }
