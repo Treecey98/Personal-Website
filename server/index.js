@@ -18,6 +18,8 @@ app.get('/api/get', (req, res) => {
             
             res.send(result);
     });
+
+    console.log('This api call is working');
 });
 
 
