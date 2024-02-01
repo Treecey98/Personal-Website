@@ -9,7 +9,7 @@ function Blog() {
 
     useEffect(() => {
             Axios.get('https://node-mysql-api-blog.onrender.com/api/recentblogposts').then((data) => {
-                console.log(data)
+                // console.log(data)
                 setPostList(data.data)
             })
     }, []);
