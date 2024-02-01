@@ -9,7 +9,7 @@ function ViewAllPosts() {
     const [postList, setPostList] = useState([])  
 
     useEffect(() => {
-        Axios.get('http://localhost:3001/api/get').then((data) => {
+        Axios.get('http://node-mysql-api-blog/api/get').then((data) => {
             setPostList(data.data)
         })
     }, []);
