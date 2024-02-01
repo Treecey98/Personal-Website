@@ -49,6 +49,23 @@ app.get('/api/getFromId/:id', (req, res) => {
     });
 });
 
+app.post('/api/create', (req, res) => {
+
+    const title = req.body.title;
+    const text = req.body.text;
+    const date = new Date()
+
+    date
+
+    db.query(
+        "INSERT INTO posts (title, posts_text, date_posted) VALUES (?,?,?)", [title, text, date], (err, result) => {
+            if (err) {
+                console.log(err);
+            }
+            console.log(result);
+    });
+});
+
 app.use('/', express.static('./build'));
 
 app.use(
