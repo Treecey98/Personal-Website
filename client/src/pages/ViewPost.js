@@ -10,7 +10,7 @@ function ViewPost () {
     const [post, setPost] = useState({});
 
     useEffect(() => {
-        Axios.get(`http://node-mysql-api-blog.onrender.com/api/getFromId/${postId}`).then((data) => {
+        Axios.get(`https://node-mysql-api-blog.onrender.com/api/getFromId/${postId}`).then((data) => {
             setPost({
                 title: data.data[0].title,
                 postText: data.data[0].posts_text,
