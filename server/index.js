@@ -11,7 +11,7 @@ app.use(express.json());
 
 app.get('/api/get', (req, res) => {
     db.query(
-        "SELECT * FROM posts", (err, result) => {
+        "SELECT * FROM Posts", (err, result) => {
             if (err) {
                 console.log(err);
             }
@@ -25,7 +25,7 @@ app.get('/api/get', (req, res) => {
 
 app.get('/api/recentblogposts', (req, res) => {
     db.query(
-        "SELECT * from posts ORDER BY date_posted DESC LIMIT 4", (err, result) => {
+        "SELECT * from Posts ORDER BY date_posted DESC LIMIT 4", (err, result) => {
             if (err) {
                 console.log(err);
             }
@@ -40,7 +40,7 @@ app.get('/api/getFromId/:id', (req, res) => {
     
     const id = req.params.id
     db.query(
-        "SELECT * FROM posts WHERE id = ?", id,(err, result) => {
+        "SELECT * FROM Posts WHERE id = ?", id,(err, result) => {
             if (err) {
                 console.log(err);
             }
@@ -60,7 +60,7 @@ app.post('/api/create', (req, res) => {
     date
 
     db.query(
-        "INSERT INTO posts (title, posts_text, date_posted) VALUES (?,?,?)", [title, text, formattedDate], (err, result) => {
+        "INSERT INTO Posts (title, posts_text, date_posted) VALUES (?,?,?)", [title, text, formattedDate], (err, result) => {
             if (err) {
                 console.log(err);
             }
