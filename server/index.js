@@ -70,7 +70,7 @@ app.use('/', express.static('./build'));
 
 app.use(
     cors({
-        origin: ["https://edward-treece.onrender.com"]
+        origin: ["https://edward-treece.onrender.com", "https://create-blog-post.onrender.com"]
     })
 )
 
