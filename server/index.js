@@ -8,6 +8,7 @@ const PORT = 3001
 
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.get('/api/get', (req, res) => {
     db.query(
@@ -49,7 +50,7 @@ app.get('/api/getFromId/:id', (req, res) => {
     });
 });
 
-app.post('https://create-blog-post.onrender.com/api/create', (req, res) => {
+app.post('/api/create', (req, res) => {
 
     const title = req.body.title;
     const text = req.body.text;
