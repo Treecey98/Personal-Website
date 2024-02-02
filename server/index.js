@@ -49,7 +49,7 @@ app.get('/api/getFromId/:id', (req, res) => {
     });
 });
 
-app.post('/api/create', (req, res) => {
+app.post('https://create-blog-post.onrender.com/api/create', (req, res) => {
 
     const title = req.body.title;
     const text = req.body.text;
