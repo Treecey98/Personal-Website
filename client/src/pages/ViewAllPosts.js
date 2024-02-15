@@ -49,7 +49,7 @@ function ViewAllPosts() {
                 <div className = "all-blog-posts-container">
                     <h2 style = {{marginLeft: "15px"}}>All blog posts</h2>
 
-                    {sortedPosts.map((val, key) => {
+                    {sortedPosts.map((val, index) => {
 
                         console.log(val);
                         
@@ -61,10 +61,10 @@ function ViewAllPosts() {
                         return(
                             <ul 
                                 className = "all-blog-posts-list"
-                                key={key} 
+                                key={index} 
                                 onClick={() => DisplaySpecificPost()}
                             >
-                                <li ref={listRef}>{val.title}</li>
+                                <li ref={listRef}>{index +1}{val.title}</li>
                             </ul>
                         )        
                         
