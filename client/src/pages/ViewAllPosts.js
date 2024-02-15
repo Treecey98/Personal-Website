@@ -64,7 +64,7 @@ function ViewAllPosts() {
                                 key={index} 
                                 onClick={() => DisplaySpecificPost()}
                             >
-                                <li ref={listRef}>{index +1}{val.title}</li>
+                                <li ref={listRef}>{index +1}. {val.title}</li>
                             </ul>
                         )        
                         
