@@ -25,9 +25,9 @@ function ViewPost () {
                 <div className = "blog-post-title">
                     <h3>{post.title}</h3>
                 </div>
-                    <p style = {{padding: "15px"}}>
+                    <pre style = {{padding: "15px"}}>
                     {post.postText}
-                    </p>
+                    </pre>
                     <h4 style = {{padding: "15px"}}>Date posted: {new Date(post.datePosted).toLocaleDateString()}</h4>
             </div> 
         </>
