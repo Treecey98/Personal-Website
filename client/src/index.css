@@ -286,11 +286,6 @@ a {
   font-weight: bold;
 }
 
-.all-blog-posts-list li:last-child {
-  margin-top: 15px;
-  font-weight: normal;
-}
-
 .all-posts {
   display: flex;
   align-items: flex-start;
@@ -301,4 +296,8 @@ a {
 .specific-post {
   margin-left: 100px;
   width: 40%;
+}
+
+.blog-date h4{
+  margin-top: 0px;
 }

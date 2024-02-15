@@ -63,9 +63,6 @@ function ViewAllPosts() {
                                 onClick={() => DisplaySpecificPost()}
                             >
                                 <li ref={listRef}>{val.title}</li>
-                                <li>
-                                    {val.posts_text.length > 40 ? val.posts_text.substring(0,40) + '...' : val.posts_text}
-                                </li>
                             </ul>
                         )        
                         
