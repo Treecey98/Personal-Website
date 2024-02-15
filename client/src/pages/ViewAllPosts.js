@@ -18,6 +18,8 @@ function ViewAllPosts() {
 
     console.log(sortedPosts);
 
+    const listNumber = sortedPosts.getIndex(sortedPosts.id);
+
     let navigate = useNavigate();
     let listRef = useRef();
 
@@ -55,8 +57,6 @@ function ViewAllPosts() {
                             navigate(`/viewpost/${val.id}`)
                             showPost(!postDisplay)
                         }
-
-                        const listNumber = val.getIndex(val.id);
 
                         return(
                             <ul 
