@@ -18,8 +18,6 @@ function ViewAllPosts() {
 
     console.log(sortedPosts);
 
-    const listNumber = sortedPosts.getIndex(sortedPosts.id);
-
     let navigate = useNavigate();
     let listRef = useRef();
 
@@ -52,6 +50,8 @@ function ViewAllPosts() {
                     <h2 style = {{marginLeft: "15px"}}>All blog posts</h2>
 
                     {sortedPosts.map((val, key) => {
+
+                        console.log(val);
                         
                         function DisplaySpecificPost() {
                             navigate(`/viewpost/${val.id}`)
@@ -64,7 +64,7 @@ function ViewAllPosts() {
                                 key={key} 
                                 onClick={() => DisplaySpecificPost()}
                             >
-                                <li ref={listRef}>{listNumber + 1} {val.title}</li>
+                                <li ref={listRef}>{val.title}</li>
                             </ul>
                         )        
                         
