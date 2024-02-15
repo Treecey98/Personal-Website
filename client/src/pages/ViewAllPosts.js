@@ -16,6 +16,8 @@ function ViewAllPosts() {
 
     const sortedPosts = postList.sort((a,b) => b.date_posted.localeCompare(a.date_posted));
 
+    console.log(sortedPosts);
+
     let navigate = useNavigate();
     let listRef = useRef();
 
