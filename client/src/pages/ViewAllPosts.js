@@ -21,9 +21,7 @@ function ViewAllPosts() {
     let navigate = useNavigate();
     let listRef = useRef();
 
-
     const [postDisplay, showPost] = useState(false)
-
 
     useEffect(() => {
       let handler = (e)=>{
@@ -58,13 +56,15 @@ function ViewAllPosts() {
                             showPost(!postDisplay)
                         }
 
+                        const listNumber = val.getIndex(val.id);
+
                         return(
                             <ul 
                                 className = "all-blog-posts-list"
                                 key={key} 
                                 onClick={() => DisplaySpecificPost()}
                             >
-                                <li ref={listRef}>{val.title}</li>
+                                <li ref={listRef}>{listNumber + 1} {val.title}</li>
                             </ul>
                         )        
                         
