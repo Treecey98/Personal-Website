@@ -301,3 +301,9 @@ a {
 .blog-date h4{
   margin-top: 0px;
 }
+
+pre {
+  text-wrap: wrap;
+  text-align: left;
+  font-family: sans-serif;
+}

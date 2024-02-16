@@ -31,9 +31,9 @@ function Blog() {
                             <div className = "blog-post-title">
                                 <h3>{val.title}</h3>
                             </div>
-                                <p style = {{textAlign: "left", marginLeft: "10px"}}>
-                                    {val.posts_text.length > 500 ? val.posts_text.substring(0,500) + '...' : val.posts_text}
-                                </p>
+                                <pre style = {{textAlign: "left", marginLeft: "10px"}}>
+                                    {val.posts_text.length > 300 ? val.posts_text.substring(0,300) + '...' : val.posts_text}
+                                </pre>
                             <div className = "blog-date">
                                 <h4>Date posted: {new Date(val.date_posted).toLocaleDateString()}</h4>
                             </div>
