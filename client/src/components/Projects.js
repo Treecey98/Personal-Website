@@ -4,7 +4,7 @@ import EasyEats from '../images/EasyEats.png'
 
 function Projects() {
     return(
-        <div>
+        <div className="main-projects-container">
             <h2 className = "title--centre" id = "Projects">Projects</h2>
             <div className ="projects--container">
                 <img src={SpareSeat} alt="SpareSeat project homepage" className = "projects--images"/>
@@ -29,7 +29,7 @@ function Projects() {
                 <img src={EasyEats} alt="EasyEats project homepage" className = "projects--images"/>
                     <div className = "projects--description">
                         <h4>Description</h4>
-                            <p>Project built over 2 weeks in a group of 3, offering a new marketplace to buy and exchange football tickets.</p>
+                            <p>Application to help users find restaurants in their local area easier. </p>
                         <h4>Tech stack</h4>
                             <div className = "projects--tech-stack">
                                 <ul className = "projects--tech-stack-list">
