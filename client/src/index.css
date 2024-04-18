@@ -251,7 +251,9 @@ a {
 }
 
 .blog-date {
-  margin-top: auto;
+  position: relative;
+  top: 10px;
+  border: 1px solid black;
 }
 
 #allPosts {
@@ -300,10 +302,6 @@ a {
 .specific-post {
   margin-left: 100px;
   width: 40%;
-}
-
-.blog-date h4{
-  margin-top: 0px;
 }
 
 pre {
