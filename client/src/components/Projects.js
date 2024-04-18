@@ -30,7 +30,7 @@ function Projects() {
                     <img src={EasyEats} alt="EasyEats project homepage" className = "projects--images"/>
                         <div className = "projects--description">
                             <h4>Description</h4>
-                                <p>Application to help users find restaurants in their local area easier. </p>
+                                <p>Application to help users easily find restaurants in their local area. </p>
                             <h4>Tech stack</h4>
                                 <div className = "projects--tech-stack">
                                     <ul className = "projects--tech-stack-list">
