@@ -15,9 +15,9 @@ function Projects() {
                             <h4>Tech stack</h4>
                                 <div className = "projects--tech-stack">
                                     <ul className = "projects--tech-stack-list">
-                                        <li>Ruby</li>
                                         <li>HTML</li>
                                         <li>CSS</li>
+                                        <li>Ruby</li>
                                         <li>Javascript</li>
                                     </ul>
                                     <a href="https://github.com/andreibadea7/SpareSeat" target="_blank" rel="noreferrer"><button className = "projects--button">Code repository</button></a>
@@ -34,6 +34,8 @@ function Projects() {
                             <h4>Tech stack</h4>
                                 <div className = "projects--tech-stack">
                                     <ul className = "projects--tech-stack-list">
+                                        <li>HTML</li>
+                                        <li>CSS</li>
                                         <li>React</li>
                                         <li>Node</li>
                                         <li>MySQL</li>
