@@ -311,3 +311,7 @@ pre {
   text-align: left;
   font-family: sans-serif;
 }
+
+.home-page-blog-text {
+  overflow: hidden;
+}

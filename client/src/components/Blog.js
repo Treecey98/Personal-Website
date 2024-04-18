@@ -31,9 +31,9 @@ function Blog() {
                             <div className = "blog-post-title">
                                 <h3>{val.title}</h3>
                             </div>
-                            <div>
+                            <div className="home-page-blog-text">
                                 <pre style = {{textAlign: "left", marginLeft: "10px"}}>
-                                    {val.posts_text.length > 350 ? val.posts_text.substring(0,350) + '...' : val.posts_text}
+                                    {val.posts_text}
                                 </pre>
                             </div>
                             <div className = "blog-date">
