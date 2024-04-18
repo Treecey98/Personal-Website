@@ -5,8 +5,8 @@ import EasyEats from '../images/EasyEats.png'
 function Projects() {
     return(
         <div>
+            <h2 className = "title--centre" id = "Projects">Projects</h2>
             <div className="main-projects-container">
-                <h2 className = "title--centre" id = "Projects">Projects</h2>
                 <div className ="projects--container">
                     <img src={SpareSeat} alt="SpareSeat project homepage" className = "projects--images"/>
                         <div className = "projects--description">
