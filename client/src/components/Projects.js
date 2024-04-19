@@ -31,7 +31,7 @@ function Projects() {
                         <div className = "projects--description">
                             <h4>Description</h4>
                                 <p>Application to help users easily find restaurants in their local area. </p>
-                                <p>Live site link: <a href="https://easy-eats.onrender.com/" target="_blank" rel="noreferrer"/></p>
+                                <p>Live site link: <a href="https://easy-eats.onrender.com/" target="_blank" rel="noreferrer"/>https://easy-eats.onrender.com</p>
                             <h4>Tech stack</h4>
                                 <div className = "projects--tech-stack">
                                     <ul className = "projects--tech-stack-list">
