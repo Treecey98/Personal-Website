@@ -376,7 +376,7 @@ a {
 }
 
 pre {
-  text-wrap: wrap;
+  white-space: pre-wrap;
   text-align: left;
   font-family: sans-serif;
 }
