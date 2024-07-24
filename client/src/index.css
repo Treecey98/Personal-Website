@@ -66,6 +66,17 @@ a {
   display: flex;
 }
 
+@media screen and (max-width: 400px) {
+  
+  .main-projects-container {
+    width: 100%;
+    display: block; 
+    margin: auto; 
+    margin-bottom: 25px;
+  }
+  
+}
+
 .projects--container {
   width: 500px;
   margin: 20px;
@@ -73,6 +84,19 @@ a {
   border-radius: 5px;
   padding: 10px;
   background-color: #FCFFFD;
+}
+
+@media screen and (max-width: 400px) {
+  
+  .projects--container {
+    width: 380px; 
+    margin: 0px 0px 20px 0px!important;
+    border: 2px solid #5D737E;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #FCFFFD;
+  }
+  
 }
 
 .projects--images {
@@ -87,8 +111,8 @@ a {
 
 .projects--tech-stack {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .projects--tech-stack-list {
@@ -118,6 +142,17 @@ a {
   width: 50%;
   text-align: center;
   padding: 15px 15px 5px 15px;
+}
+
+@media screen and (max-width: 400px) {
+  
+  .title--centre {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+    padding: 15px 15px 5px 15px;
+  }
+  
 }
 
 .contacts--icons {
@@ -237,11 +272,40 @@ a {
   border-radius: 5px;
 }
 
+@media screen and (max-width: 400px) {
+  
+  .view-post {
+    width: 100%;
+  }
+  
+}
+
 .blog-posts {
   border: 0.5px solid #5D737E;
   height: 380px;
   margin: 10px 0px;
   display: flex;
+}
+
+@media screen and (max-width: 400px) {
+  
+  .blog-posts {
+    width: 100%;
+    display: block; 
+    margin: auto; 
+    margin-bottom: 25px;
+    height: fit-content;
+  }
+  
+}
+
+@media screen and (max-width: 400px) {
+  
+  .post {
+    width: 90%;
+    margin-bottom: 5px!important;
+  }
+  
 }
 
 .blog-post-title {
@@ -252,8 +316,7 @@ a {
 
 .blog-date {
   position: relative;
-  top: 10px;
-  border-top: 1px solid black;
+  border: 1px solid black;
 }
 
 #allPosts {
@@ -272,6 +335,14 @@ a {
   color: #FCFFFD; 
 }
 
+@media screen and (max-width: 400px) {
+  
+  .all-blog-posts-container {
+    width: 60%;
+  }
+  
+}
+
 .all-blog-posts-list {
   padding: 5px;
   border-top: 1px #5D737E solid;
@@ -283,7 +354,7 @@ a {
 }
 
 .all-blog-posts-list:last-child {
- padding-bottom: 15px;
+  padding-bottom: 15px;
 }
 
 .all-blog-posts-list li {
